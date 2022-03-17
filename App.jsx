@@ -33,7 +33,6 @@ const App = () => {
   return (
     <View style={{ width: '100%', height: '100%', overflow: 'hidden'}}>
       <Navigation />
-      <Text style={{fontFamily: 'Inspiration', fontSize: 90}} >sdsfsfd</Text>
       <StatusBar style="hidden" />
     </View>
   );
