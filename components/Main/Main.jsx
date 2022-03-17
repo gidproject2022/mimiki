@@ -1,7 +1,5 @@
 import React from 'react'
 import {View, Text} from 'react-native'
-import './App.css'
-import companyLogo from './Img/setting.png'
 
 const Main = () => {
   return (
@@ -9,6 +7,7 @@ const Main = () => {
     <Text style={{fontFamily: 'Inspiration', fontSize: 90}}></Text></View>
 
     
+
   )
 }
 
