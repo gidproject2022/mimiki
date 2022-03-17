@@ -1,10 +1,20 @@
 import { View, Text } from 'react-native'
 import React from 'react'
+import Topdirection from '../ui/Topdirection'
+import Directions_can from '../ui/Directions_can'
+import ForYou from '../ui/ForYou'
 
 const Directions = () => {
   return (
-    <View style={{marginTop: 30}}>
-      <Text>Directions</Text>
+    <View style={{
+      marginTop: 30,
+      paddingHorizontal: 28,
+      backgroundColor: 'white',
+      height: '100%',
+  }}>
+      <Topdirection />
+      <Directions_can />
+      <ForYou />
     </View>
   )
 }

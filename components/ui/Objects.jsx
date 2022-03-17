@@ -1,5 +1,6 @@
 import { View, Text, ScrollView, Dimensions } from 'react-native'
 import React from 'react'
+import Base from './Base'
 
 const HEIGHT = Dimensions.get('window').height
 const WIDTH = Dimensions.get('window').width
@@ -8,10 +9,16 @@ const Objects = () => {
   return (
     <ScrollView style={{
         marginTop: 20,
-        backgroundColor: 'red',
-        height: (HEIGHT - 200),
+        height: (HEIGHT - 230),
     }}>
-      <Text>Objects</Text>
+      <Base />
+      <Base />
+      <Base />
+      <Base />
+      <Base />
+      <Base />
+      <Base />
+      <Base />
     </ScrollView>
   )
 }
