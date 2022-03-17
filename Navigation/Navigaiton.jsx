@@ -1,0 +1,58 @@
+import React from 'react'
+import { View, Text, Image } from 'react-native'
+
+
+import { NavigationContainer } from '@react-navigation/native';
+import { createBottomTabNavigator } from '@react-navigation/bottom-tabs';
+
+// Screens
+import Main from '../components/Main/Main'
+import Favorites from '../components/Favorites/Favorites'
+import Geo from '../components/Geo/Geo'
+import Directions from '../components/Directions/Directions';
+
+const Tab = createBottomTabNavigator();
+
+
+const Navigation = () => {
+  return (
+    <NavigationContainer>
+        <Tab.Navigator initialRouteName='Главная' screenOptions={({ route }) => ({
+            headerStyle: {height: 0},
+            tabBarShowLabel: false,
+            tabBarStyle: {height: 80, border: 'none', backgroundColor: 'white',},
+            tabBarIcon: ({ focused }) => {
+                let img = '../assets/images/menu/directions.png';
+
+                if (route.name === 'Главная') {
+                    img = focused
+                    ? require('../assets/images/menu/main-active.png')
+                    : require('../assets/images/menu/main.png');
+                } else if (route.name === 'Избранные') {
+                    img = focused 
+                    ? require('../assets/images/menu/favorites-active.png' )
+                    : require('../assets/images/menu/favorites.png');
+                } else if (route.name === 'Направления') {
+                    img = focused 
+                    ? require('../assets/images/menu/directions-active.png' )
+                    : require('../assets/images/menu/directions.png');
+                } else if (route.name === 'Маршрут') {
+                    img = focused 
+                    ? require('../assets/images/menu/geo-active.png' )
+                    : require('../assets/images/menu/geo.png');
+                }
+
+                return <Image source={img} style={{height: 25, width: 25}} />;
+            },
+        })}
+      >
+            <Tab.Screen name="Главная" component={Main} />
+            <Tab.Screen name="Избранные" component={Favorites} />
+            <Tab.Screen name="Направления" component={Directions} />
+            <Tab.Screen name="Маршрут" component={Geo} />
+        </Tab.Navigator>
+    </NavigationContainer>
+  )
+}
+
+export default Navigation;
