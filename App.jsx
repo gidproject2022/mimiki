@@ -10,6 +10,8 @@ import Navigation from './Navigation/Navigaiton';
 
 async function loadAppAplication() {
   await Font.loadAsync({
+    'Roboto-Medium': require('./assets/fonts/Roboto-Medium.ttf'),
+    'Roboto-Bold': require('./assets/fonts/Roboto-Bold.ttf'),
     'Roboto': require('./assets/fonts/Roboto-MediumItalic.ttf'),
     'Inspiration': require('./assets/fonts/Inspiration-Regular.ttf'),
   });
@@ -33,7 +35,6 @@ const App = () => {
   return (
     <View style={{ width: '100%', height: '100%', overflow: 'hidden'}}>
       <Navigation />
-      <Text style={{fontFamily: 'Inspiration', fontSize: 90}} >sdsfsfd</Text>
       <StatusBar style="hidden" />
     </View>
   );
