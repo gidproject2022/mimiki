@@ -1,4 +1,4 @@
-import { View, Text, Dimensions, Image, TouchableOpacity } from 'react-native'
+import { View, Text, Dimensions, Image, TouchableOpacity, ScrollView } from 'react-native'
 import React from 'react'
 
 import SearchBar from '../ui/SearchBar'
@@ -10,7 +10,7 @@ const WIDTH = Dimensions.get('window').width
 
 const Museums = ({navigation}) => {
   return (
-    <View style={{
+    <ScrollView showsVerticalScrollIndicator={false} showsHorizontalScrollIndicator={false} style={{
         marginTop: 30,
         width: (WIDTH - 56),
         marginHorizontal: 28,
@@ -56,7 +56,7 @@ const Museums = ({navigation}) => {
         <SearchBar/>
         <Filters />
         <Objects />
-    </View>
+    </ScrollView>
   )
 }
 
