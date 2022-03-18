@@ -40,7 +40,6 @@ export default function RegistrationScreen({ navigation }) {
         .then(() => {})
         .catch((error) => {
           alert(error.message);
-          // ..
         });
     } else {
       alert("Пароли не совпадают!");

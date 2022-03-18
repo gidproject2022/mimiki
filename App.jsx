@@ -2,6 +2,9 @@ import { StatusBar } from 'expo-status-bar';
 import { StyleSheet, Text, View } from 'react-native';
 import React, { useState } from 'react';
 
+import { LogBox } from 'react-native';
+LogBox.ignoreLogs(['Warning: ...']);
+
 import { NavigationContainer } from "@react-navigation/native";
 import { createNativeStackNavigator } from "@react-navigation/native-stack";
 
@@ -10,11 +13,14 @@ import * as Font from 'expo-font';
 
 
 import Navigation from './Navigation/Navigaiton';
-import Autorization from './components/Autorization/Autorization';
-import Registration from './components/Registration/Registration';
+import RegistrationScreen from './components/Registration/RegistrationScreen';
+import AutorizationScreen from './components/Autorization/AutorizationScreen';
 
-import firebase from "firebase/app";
 import "firebase/auth";
+import firebase from "firebase/app";
+
+
+
 
 async function loadAppAplication() {
   await Font.loadAsync({
@@ -76,13 +82,13 @@ const App = () => {
         ) : (
           <Stack.Navigator>
             <Stack.Screen
-              name="Войти"
-              component={Autorization}
+              name="Авторизация"
+              component={AutorizationScreen}
               options={{ headerShown: false }}
             />
             <Stack.Screen
               name="Регистрация"
-              component={Registration}
+              component={RegistrationScreen}
               options={{ headerShown: false }}
             />
           </Stack.Navigator>

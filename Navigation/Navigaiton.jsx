@@ -6,7 +6,7 @@ import { NavigationContainer } from '@react-navigation/native';
 import { createBottomTabNavigator } from '@react-navigation/bottom-tabs';
 
 // Screens
-import Main from '../Navigation/Navigation4'
+import Navigation4 from '../Navigation/Navigation4'
 import Favorites from '../components/Favorites/Favorites'
 import Geo from '../components/Geo/Geo'
 import Directions from './Navigation2';
@@ -45,7 +45,7 @@ const Navigation = () => {
             },
         })}
       >
-            <Tab.Screen name="Главная" component={Main} />
+            <Tab.Screen name="Главная" component={Navigation4} />
             <Tab.Screen name="Избранные" component={Favorites} />
             <Tab.Screen name="Направления" component={Directions} />
             <Tab.Screen name="Маршрут" component={Geo} />
