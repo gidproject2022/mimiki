@@ -21,7 +21,7 @@ const ActiveF = () => {
             fontWeight: '500',
             fontFamily: 'Roboto-Medium',
             lineHeight: 16.8,
-        }}>Турбазы</Text>
+        }}>Критерии</Text>
     </View>
   )
 }

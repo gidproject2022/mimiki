@@ -10,7 +10,6 @@ const Objects = () => {
     <ScrollView showsVerticalScrollIndicator={false} showsHorizontalScrollIndicator={false}
     style={{
         marginTop: 10,
-        height: (HEIGHT - 230),
     }}>
       <Base />
       <Base />

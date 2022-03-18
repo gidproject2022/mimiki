@@ -19,7 +19,6 @@ const Filters = () => {
       <InActiveF />
       <InActiveF />
       <InActiveF />
-      
     </ScrollView>
   )
 }

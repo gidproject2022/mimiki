@@ -8,7 +8,7 @@ import Objects from '../ui/Objects'
 const HEIGHT = Dimensions.get('window').height
 const WIDTH = Dimensions.get('window').width
 
-const Otels = ({navigation}) => {
+const Museums = ({navigation}) => {
   return (
     <View style={{
         marginTop: 30,
@@ -33,7 +33,7 @@ const Otels = ({navigation}) => {
             
             <Text style={{
                 textAlign: 'center'
-            }}>Отели</Text>
+            }}>Музеи</Text>
             <View style={{
                 display: 'flex',
                 flexDirection: 'row',
@@ -60,4 +60,4 @@ const Otels = ({navigation}) => {
   )
 }
 
-export default Otels
+export default Museums

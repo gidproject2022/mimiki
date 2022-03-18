@@ -5,7 +5,7 @@ import Directions_can from '../ui/Directions_can'
 import ForYou from '../ui/ForYou'
 
 
-const Directions = () => {
+const Directions = ({navigation}) => {
   return (
     <View style={{
       marginTop: 0,

@@ -15,7 +15,7 @@ const Base = () => {
         justifyContent: 'flex-start',
         backgroundColor: 'white',
         borderRadius: 15,
-        marginTop: 30,
+        marginTop: 15,
     }}>
       <Image source={require('../../assets/images/base.png')} style={{
           height: 85, 
@@ -32,7 +32,7 @@ const Base = () => {
           justifyContent: 'space-around',
       }}>
         <View>
-            <Text>Название турбазы</Text>
+            <Text>Название ОбЪекта</Text>
             <Text>Оценка</Text>
         </View>
         <Image source={require('../../assets/images/like.png')} style={{

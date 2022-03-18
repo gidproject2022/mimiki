@@ -10,19 +10,23 @@ import Car_arenda from '../components/Car_arenda/Car_arenda';
 import Otels from '../components/Otels/Otels';
 import Tour_Bases from '../components/Tour_Bases/Tour_Bases';
 import Restorans from '../components/Restorans/Restorans';
+import Places from '../components/Places/Places';
+import Museums from '../components/Museums/Museums';
 
 const Stack = createNativeStackNavigator();
 
 
 const Navigation2 = () => {
   return (
-      <Stack.Navigator headerShown={false}>
+      <Stack.Navigator initialRouteName='Начало'>
         <Stack.Screen name="Начало" component={Directions} options={{ headerShown: false }}/>
         <Stack.Screen name="Такси" component={Taxi} options={{ headerShown: false }}/>
         <Stack.Screen name="Аренда машины" component={Car_arenda} options={{ headerShown: false }}/>
         <Stack.Screen name="Отели" component={Otels} options={{ headerShown: false }}/>
         <Stack.Screen name="Турбазы" component={Tour_Bases} options={{ headerShown: false }}/>
         <Stack.Screen name="Рестораны" component={Restorans} options={{ headerShown: false }}/>
+        <Stack.Screen name="Места" component={Places} options={{ headerShown: false }}/>
+        <Stack.Screen name="Музеи" component={Museums} options={{ headerShown: false }}/>
       </Stack.Navigator>
   )
 }
