@@ -6,7 +6,7 @@ import { NavigationContainer } from '@react-navigation/native';
 import { createBottomTabNavigator } from '@react-navigation/bottom-tabs';
 
 // Screens
-import Main from '../components/Main/Main'
+import Main from '../Navigation/Navigation4'
 import Favorites from '../components/Favorites/Favorites'
 import Geo from '../components/Geo/Geo'
 import Directions from './Navigation2';
@@ -16,7 +16,6 @@ const Tab = createBottomTabNavigator();
 
 const Navigation = () => {
   return (
-    <NavigationContainer>
         <Tab.Navigator initialRouteName='Главная' screenOptions={({ route }) => ({
             headerStyle: {height: 0},
             tabBarShowLabel: false,
@@ -51,7 +50,6 @@ const Navigation = () => {
             <Tab.Screen name="Направления" component={Directions} />
             <Tab.Screen name="Маршрут" component={Geo} />
         </Tab.Navigator>
-    </NavigationContainer>
   )
 }
 

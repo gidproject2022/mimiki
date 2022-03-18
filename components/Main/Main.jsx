@@ -1,5 +1,5 @@
 import React from 'react'
-import {View, Text, Image, Dimensions, ScrollView} from 'react-native'
+import {View, Text, Image, Dimensions, ScrollView, TouchableOpacity} from 'react-native'
 import Filters from '../ui/Filters'
 import Objects from '../ui/Objects'
 import SearchBar from '../ui/SearchBar'
@@ -7,7 +7,7 @@ import SearchBar from '../ui/SearchBar'
 const HEIGHT = Dimensions.get('window').height
 const WIDTH = Dimensions.get('window').width
 
-const Main = () => {
+const Main = ({navigation}) => {
   return (
     <ScrollView  showsVerticalScrollIndicator={false} showsHorizontalScrollIndicator={false} style={{
       marginTop: 60,
@@ -21,10 +21,13 @@ const Main = () => {
         justifyContent: 'space-between',
         alignItems: 'center',
       }}>
-        <Image style={{
-          height: 30,
-          width: 30,
-        }} source={require('../../assets/images/setting.png')} />
+        <TouchableOpacity onPress={() => {navigation.navigate('Настройки')}}>
+          <Image style={{
+            height: 30,
+            width: 30,
+          }} source={require('../../assets/images/setting.png')} />
+        </TouchableOpacity>
+        
         <Text style={{
           fontFamily: 'Roboto',
           fontWeight: '700',
@@ -32,10 +35,13 @@ const Main = () => {
           fontSize: 18,
           lineHeight: 21.6
           }}>Время отдыхать</Text>
-          <Image style={{
-          height: 30,
-          width: 30,
-        }} source={require('../../assets/images/profile.png')} />
+          <TouchableOpacity onPress={() => {navigation.navigate('Профиль')}}>
+            <Image style={{
+              height: 30,
+              width: 30,
+            }} source={require('../../assets/images/profile.png')} />
+          </TouchableOpacity>
+          
       </View>
       <Text style={{
         fontFamily: 'Roboto-Bold',
