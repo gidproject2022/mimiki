@@ -4,10 +4,11 @@ import Topdirection from '../ui/Topdirection'
 import Directions_can from '../ui/Directions_can'
 import ForYou from '../ui/ForYou'
 
+
 const Directions = () => {
   return (
     <View style={{
-      marginTop: 30,
+      marginTop: 0,
       paddingHorizontal: 28,
       backgroundColor: 'white',
       height: '100%',

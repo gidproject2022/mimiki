@@ -7,8 +7,9 @@ const WIDTH = Dimensions.get('window').width
 
 const Objects = () => {
   return (
-    <ScrollView style={{
-        marginTop: 20,
+    <ScrollView showsVerticalScrollIndicator={false} showsHorizontalScrollIndicator={false}
+    style={{
+        marginTop: 10,
         height: (HEIGHT - 230),
     }}>
       <Base />

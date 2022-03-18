@@ -9,7 +9,7 @@ import { createBottomTabNavigator } from '@react-navigation/bottom-tabs';
 import Main from '../components/Main/Main'
 import Favorites from '../components/Favorites/Favorites'
 import Geo from '../components/Geo/Geo'
-import Directions from '../components/Directions/Directions';
+import Directions from './Navigation2';
 
 const Tab = createBottomTabNavigator();
 

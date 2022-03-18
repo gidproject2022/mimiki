@@ -1,4 +1,4 @@
-import { View, Text, Image } from 'react-native'
+import { View, Text, Image, ScrollView } from 'react-native'
 import React from 'react'
 
 import Topname from '../ui/Topname'
@@ -8,7 +8,7 @@ import Objects from '../ui/Objects'
 
 const Favorites = () => {
   return (
-    <View style={{
+    <ScrollView  showsVerticalScrollIndicator={false} showsHorizontalScrollIndicator={false} style={{
             marginTop: 30,
             paddingHorizontal: 28,
             backgroundColor: 'white',
@@ -18,7 +18,7 @@ const Favorites = () => {
         <SearchBar />
         <Filters />
         <Objects />
-    </View>
+    </ScrollView>
   )
 }
 

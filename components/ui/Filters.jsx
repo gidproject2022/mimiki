@@ -9,7 +9,7 @@ const WIDTH = Dimensions.get('window').width
 
 const Filters = () => {
   return (
-    <ScrollView horizontal={true} style={{
+    <ScrollView horizontal={true}  showsVerticalScrollIndicator={false} showsHorizontalScrollIndicator={false} style={{
         marginTop: 20,
         height: 30,
         width: (WIDTH - 56),

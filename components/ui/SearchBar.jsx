@@ -15,7 +15,8 @@ const SearchBar = () => {
             style={{
                 marginTop: 28,
                 height: 45,
-                width: (WIDTH - 56),
+                width: (WIDTH - 58),
+                marginLeft: 2,
                 backgroundColor: '#F2F2F2'
             }}
             placeholder="Поиск"

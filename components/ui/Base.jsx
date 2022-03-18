@@ -15,6 +15,7 @@ const Base = () => {
         justifyContent: 'flex-start',
         backgroundColor: 'white',
         borderRadius: 15,
+        marginTop: 30,
     }}>
       <Image source={require('../../assets/images/base.png')} style={{
           height: 85, 
