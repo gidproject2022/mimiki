@@ -19,13 +19,13 @@ const Restorans = ({navigation}) => {
             display: 'flex',
             flexDirection: 'column',
         }}>
-            <TouchableOpacity onPress={() => {
+            <TouchableOpacity onPress={()=>{
                 navigation.goBack();
             }}>
                 <Image style={{
                     height: 36,
                     width: 36,
-                    position: 'absolute', 
+                    position: 'relative', 
                     left: 5, 
                     top: 20,
                 }} source={require('../../assets/images/arrow-left.png')} />

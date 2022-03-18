@@ -32,7 +32,7 @@ const Base = () => {
           justifyContent: 'space-around',
       }}>
         <View>
-            <Text>Название ОбЪекта</Text>
+            <Text>Название Объекта</Text>
             <Text>Оценка</Text>
         </View>
         <Image source={require('../../assets/images/like.png')} style={{
