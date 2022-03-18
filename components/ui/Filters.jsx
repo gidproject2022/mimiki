@@ -11,7 +11,7 @@ const Filters = () => {
   return (
     <ScrollView horizontal={true}  showsVerticalScrollIndicator={false} showsHorizontalScrollIndicator={false} style={{
         marginTop: 20,
-        height: 30,
+        height: 40,
         width: (WIDTH - 56),
     }}>
       <ActiveF />
